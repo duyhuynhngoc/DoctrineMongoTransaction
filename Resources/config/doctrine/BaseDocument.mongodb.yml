@@ -1,0 +1,12 @@
+MongoTransactionBundle\Document\BaseDocument:
+    fields:
+        id:
+            id:  true
+        lastmodified:
+            type: date
+        isdeleted:
+            type: int
+        modifiedby:
+            type: string
+        transactioninfo:
+            type: raw

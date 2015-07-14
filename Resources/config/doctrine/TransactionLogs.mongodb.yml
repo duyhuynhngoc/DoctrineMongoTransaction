@@ -1,0 +1,23 @@
+MongoTransactionBundle\Document\TransactionLogs:
+    repositoryClass: MongoTransactionBundle\Repository\TransactionLogsRepository
+    fields:
+        id:
+            id:  true
+        code:
+            type: int
+        data:
+            type: raw
+        transaction:
+            type: string
+        error:
+            type: boolean
+        fromdb:
+            type: string
+        fromcollection:
+            type: string
+        lastmodified:
+            type: date
+        isdeleted:
+            type: int
+        modifiedby:
+            type: string
