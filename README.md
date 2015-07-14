@@ -10,11 +10,11 @@ Transaction management for MongoDB
 Example:
 //Controller
 try{
-		MongoTransaction::startTransaction();
+		MongoDBTransaction::startTransaction();
 		//Do Something
-		MongoTransaction::commitTransaction();
+		MongoDBTransaction::commitTransaction();
 }catch(\Exception $e){
-	MongoTransaction::rollbackTransaction();
+	MongoDBTransaction::rollbackTransaction();
 	//Do Something
 }
 
